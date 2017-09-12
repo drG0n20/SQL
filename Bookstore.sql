@@ -93,7 +93,7 @@ c.customerSurname='Nowak' AND
 c.IdCustomer = o.IdCustomer AND
 O.IdBook = b.IdBook; */
 
-
+/*
 SELECT c.customerName, c.customerSurname, o.IdCustomer, o.orderDate, o.Status, b.Title
 FROM Customers AS c, Books AS b, Orders AS o
 WHERE 
@@ -101,7 +101,11 @@ c.customerSurname='Rutkowski' AND
 c.IdCustomer = o.IdCustomer AND
 O.IdBook = b.IdBook
 ORDER BY
-O.orderDate ASC;
+O.orderDate ASC; */
+
+
+
+
 
 
 
