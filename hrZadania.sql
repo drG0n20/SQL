@@ -74,6 +74,23 @@ JOIN departments USING(location_id)
 WHERE department_id IN (SELECT department_id FROM employees 
 GROUP BY department_id HAVING COUNT(department_id)>=2 ) GROUP BY country_name, city; */
 
+#17 Wypisz nazwę wydziału, dane kierownika i miasto
+/*
+SELECT department_name, first_name,last_name, city
+FROM departments
+JOIN employees USING(manager_id)
+JOIN locations USING(location_id); */
+
+#18
+#Wyświetl dane pracownika, wynagrodzenie dla każdego pracownika pracującego w Londynie
+/*
+SELECT e.first_name, e.last_name, e.salary, l.location_id 
+FROM  employees e
+JOIN  locations l ON  e.employee_id = l.location_id 
+WHERE city='Londyn';  */
+
+
+
 
 
 
