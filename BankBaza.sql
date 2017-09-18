@@ -1,3 +1,5 @@
+drop database if exists BANK_v2;
+
 CREATE DATABASE BANK_v2;
 
 USE BANK_v2;

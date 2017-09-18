@@ -38,13 +38,6 @@ FROM pracownicy s
 JOIN pracownicy p ON s.ID_pracownika = p.ID_przelozonego
 WHERE s.imie='Leopold' OR s.nazwisko='Banko'; */
 
-#11
-#Pokaż wszystkich pracowników którzy już nie pracują w banku. Wyniki przedstaw w postaci
-#kolumn: Imię i nazwisko / Dział / Data Zakończenia Pracy.
-
-SELECT imie, nazwisko, s.nazwa, d.nazwa, dataZatrudnienia FROM pracownicy 
-LEFT JOIN stanowiska s USING(ID_stanowiska)
- LEFT JOIN dzialy d USING(ID_dzialu); 
 
 
 
