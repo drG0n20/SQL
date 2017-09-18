@@ -56,6 +56,13 @@ WHERE plec='m' and TytulFilmu LIKE 'Przeminelo%'; */
  #4
  # SELECT ImieGwiazdy,NazwiskoGwiazdy,TytulFilmu FROM gwiazdyw where TytulFilmu!='Przeminelo z wiatrem';
  
+ #5 Wypisz datę premiery oraz datę urodzenia dyrektora produkcji wszystkich filmów
+ 
+ 
+ 
+ 
+ 
+ 
 
 
 
