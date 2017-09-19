@@ -56,10 +56,22 @@ WHERE plec='m' and TytulFilmu LIKE 'Przeminelo%'; */
  #4
  # SELECT ImieGwiazdy,NazwiskoGwiazdy,TytulFilmu FROM gwiazdyw where TytulFilmu!='Przeminelo z wiatrem';
  
- #5 Wypisz datę premiery oraz datę urodzenia dyrektora produkcji wszystkich filmów
+ #5 Wypisz datę premiery oraz datę urodzenia dyrektora produkcji wszystkich filmów'
+ /*
+ SELECT premiera, DataUr  FROM gwiazdyw
+ JOIN dyrektorprodukcji ON Nazwisko = NazwiskoDyrektora; */
+ 
+ #6 sredni wiek aktorow dla kazdego gatunku filmu
+/*
+ SELECT Gatunek, Nazwisko, AVG((TO_DAYS(NOW())-TO_DAYS(DataUrodzenia)))/365.242199 AS 'Średnia wieku'
+ FROM film 
+  JOIN gwiazdyw  ON Tytul = TytulFilmu
+  JOIN aktor  ON Nazwisko = NazwiskoGwiazdy;  */
+  
+  
  
  
- 
+
  
  
  
